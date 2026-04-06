@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap");
+@import "tailwindcss";
+
+:root {
+	--brand: #c8f401;
+	--black: #0d0d0d;
+	--font-brand: "Syne", sans-serif;
+	--font-dm-sans: "DM Sans", sans-serif;
+}
+@theme {
+	--font-brand: "Syne", sans-serif;
+	--font-dm-sans: "DM Sans", sans-serif;
+}
+
+body {
+	font-family: var(--font-brand);
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px #171717 inset; /* match your bg */
+	-webkit-text-fill-color: #fff;
+	transition: background-color 9999s ease-in-out 0s;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideOut {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
